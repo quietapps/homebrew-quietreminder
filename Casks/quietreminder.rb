@@ -1,6 +1,6 @@
 cask "quietreminder" do
-  version "1.4.7"
-  sha256 "52e2449cfcc7e91b73df37c823d2466dbc2609877cfa10d1cb4c8555e57a5ea7"
+  version "1.4.8"
+  sha256 "6610613e1c91961721742d90c54b58c42e5d76cb74b61286503c5458c5b545c0"
 
   url "https://github.com/quietapps/QuietReminder/releases/download/v#{version}/QuietReminder-#{version}.zip",
       verified: "github.com/quietapps/QuietReminder/"
@@ -50,8 +50,5 @@ cask "quietreminder" do
 
     Or run this in Terminal once after install:
       xattr -cr "/Applications/Quiet Reminder.app"
-
-    On first launch, click "Enable Calendar access in Settings" in the menu bar
-    to grant calendar access.
   EOS
 end
