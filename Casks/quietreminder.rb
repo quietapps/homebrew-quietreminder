@@ -2,7 +2,7 @@ cask "quietreminder" do
   version "1.4.1"
   sha256 "c44caedd3b6ddcf42bea4daf03c9f53836459f340f065160098d8d9719468e65"
 
-  url "https://github.com/quietapps/QuietReminder/releases/download/v\#{version}/QuietReminder-\#{version}.zip",
+  url "https://github.com/quietapps/QuietReminder/releases/download/v#{version}/QuietReminder-#{version}.zip",
       verified: "github.com/quietapps/QuietReminder/"
   name "Quiet Reminder"
   desc "Flies a banner across your screen before every meeting"
@@ -26,10 +26,12 @@ cask "quietreminder" do
   #      Finder / Dock launches the real binary.
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "\#{appdir}/Quiet Reminder.app"],
+                   args: ["-cr", "#{appdir}/Quiet Reminder.app"],
                    sudo: false
-    system_command "/System/Library/Frameworks/CoreServices.framework/"                    "Versions/A/Frameworks/LaunchServices.framework/"                    "Versions/A/Support/lsregister",
-                   args: ["-f", "\#{appdir}/Quiet Reminder.app"],
+    system_command "/System/Library/Frameworks/CoreServices.framework/" \
+                   "Versions/A/Frameworks/LaunchServices.framework/" \
+                   "Versions/A/Support/lsregister",
+                   args: ["-f", "#{appdir}/Quiet Reminder.app"],
                    sudo: false,
                    must_succeed: false
   end
