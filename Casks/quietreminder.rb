@@ -1,6 +1,6 @@
 cask "quietreminder" do
-  version "1.4.1"
-  sha256 "c44caedd3b6ddcf42bea4daf03c9f53836459f340f065160098d8d9719468e65"
+  version "1.4.2"
+  sha256 "19324aba8187ccec099a86a54b6f5092f44f54bc758787af06d4b50a5fd76f15"
 
   url "https://github.com/quietapps/QuietReminder/releases/download/v#{version}/QuietReminder-#{version}.zip",
       verified: "github.com/quietapps/QuietReminder/"
@@ -58,6 +58,6 @@ cask "quietreminder" do
       xattr -cr "/Applications/Quiet Reminder.app"
 
     Quiet Reminder needs Calendar access to read upcoming events.
-    On first launch, grant access in the menu bar or when macOS prompts you.
+    Grant access when prompted on first launch.
   EOS
 end
