@@ -1,6 +1,6 @@
 cask "quietreminder" do
-  version "1.4.2"
-  sha256 "19324aba8187ccec099a86a54b6f5092f44f54bc758787af06d4b50a5fd76f15"
+  version "1.4.3"
+  sha256 "0944ed927fbf1a86f35aa70bf5e104f2b34d1e97c12c4eb7a28c3f67947a38f9"
 
   url "https://github.com/quietapps/QuietReminder/releases/download/v#{version}/QuietReminder-#{version}.zip",
       verified: "github.com/quietapps/QuietReminder/"
